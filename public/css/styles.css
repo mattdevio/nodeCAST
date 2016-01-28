@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css?family=Geo:400,400italic); 
+
+/* General Styles */
+* {
+	box-sizing: border-box;
+}
+body{
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	position: relative;
+	font-family: "Geo", sans-serif;
+	background: #333;
+}
+.wrapper {
+	max-width: 1000px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+/* Header Styles */
+
+header{
+	padding: 0px;
+	margin: 80px 0px 0px 0px;
+}
+
+header h1{
+	color: #FFCC00;
+	padding: 0;
+	margin: 0;
+	font-size: 4em;
+	text-align: center;
+	border-bottom: 8px solid #669966;
+}
+header h1 span{
+	font-style: italic;
+	font-size: 2em;
+	color: #993366;
+}
+header a{
+	text-decoration: none;
+}
+
+/* Note Styles */
+
+.note p{
+	font-size: 1.5em;
+	color: #f8f8f8;
+	text-align: center;
+	padding-bottom: 25px;
+	margin: 20px 0px;
+	border-bottom: 8px solid #669966;
+}
+.note p span{
+	color: #FFCC00;
+	border-bottom: 2px solid #FFCC00;
+}
+
+/* Form Styles */
+
+form{
+	margin: 0;
+	padding: 0;
+	font-family: "Geo", sans-serif;
+	position: relative;
+}
+form input[type=text]{
+	background: transparent;
+	font-family: inherit;
+	border: 0px;
+	color: #993366;
+	font-weight: 800;
+	display: block;
+	text-align: left;
+	width: 100%;
+	font-size: 5em;
+	padding: 20px 10px;
+	text-align: center;
+}
+form input[type=text]:focus,
+button:focus{
+	outline: none;
+}
+form p.alert{
+	text-align: center;
+	display: none;
+	margin: 0;
+	padding: 0;
+	color: #DC143C;
+	font-style: italic;
+	font-size: 2em;
+	border: none;
+	position: absolute;
+	top: -15px;
+	width: 100%;
+}
+form button{
+	background: #669966;
+	color: #333;
+	font-size: 4em;
+	font-family: inherit;
+	border-radius: none;
+	border:none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+/* Results and output */
+
+#results{
+	display: none;
+}
+#results .right-now{
+	border-bottom: 8px solid #669966;
+}
+
+#results h3{
+	font-size: 2.5em;
+	color: #333;
+	padding: 10px 0;
+	background: #669966;
+	margin: 0;
+	text-align: center;
+	font-weight: 1000;
+	border-bottom: 8px solid #669966;
+}
+#results table{
+	color: #fff;
+	font-size: 1.5em;
+	width: 33.333%;
+	display: inline-block;
+	height: 90px;
+	vertical-align: top;
+	border-right: 3px solid #669966;
+}
+#results table tbody{
+	width: 100%;
+	display: table;
+	top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+}
+#results table tr{
+	width: 100%;
+}
+#results table tr td{
+	width: 50%;
+	text-align: center;
+}
+#results .summary{
+	display: inline-block;
+	width: 33.333%;
+	height: 90px;
+	border-left: 3px solid #669966;
+	border-right: 3px solid #669966;
+}
+#results .summary span,
+#results .humidity span{
+	color: #fff;
+	text-align: center;
+	display: block;
+	font-size: 2em;
+	padding: 0px 10px;
+	top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+}
+#results .humidity{
+	display: inline-block;
+	width: 33.333%;
+	height: 90px;
+	border-left: 3px solid #669966;
+}
+
+/* 5 day forcast */
+
+.five-day h4{
+	color: #f9f1f3;
+	text-align: center;
+	font-size: 3em;
+	padding: 0;
+	margin: 0;
+	border-bottom: 8px solid #669966;
+}
+.five-day h4 span{
+	color: #FFCC00;
+	font-size: 2rem;
+	padding: 0px 150px;
+}
+.five-day div.day{
+	width: 20%;
+	padding: 0px;
+	margin: 0px;
+	border: 2px solid #fff;
+	height: 300px;
+	float: left;
+	display: inline-block;
+}
+.five-day div.day div:nth-child(1){
+	background: #fff;
+	color: #333;
+	display: block;
+	text-align: center;
+	font-size: 1.4em;
+	padding: 5px 0px;
+	border: 2px solid #333;
+}
+.five-day div.day div:nth-child(2){
+	font-size: 2.3em;
+	display: block;
+	margin-top: 30px;
+	color: #FFCC00;
+	text-align: center;
+	border-bottom: 3px dashed #669966;
+}
+.five-day div.day div:nth-child(3){
+	font-size: 2.3em;
+	display: block;
+	color: #993366;
+	text-align: center;
+}
+.five-day div.day div:nth-child(4){
+	text-align: center;
+	font-size: 1.1em;
+	margin-top: 20px;
+	padding: 0px 5px;
+	color: #fff;
+}
+
+
+#results .stamp{
+	color: #333;
+	clear:both;
+	padding: 10px 0px;
+	background: #669966;
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 800;
+}
+#results .stamp:hover{
+	background: #FFCC00;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

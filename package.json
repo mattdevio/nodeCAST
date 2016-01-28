@@ -1,0 +1,20 @@
+{
+  "name": "forcast_server",
+  "version": "1.0.0",
+  "description": "\"Show the weather forcast for the week based on an address\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "forcast",
+    "weather",
+    "geolocate"
+  ],
+  "author": "Matthew Greenberg",
+  "license": "MIT",
+  "dependencies": {
+    "forecastioplus": "^1.0.0",
+    "geocodeplus": "^1.0.1"
+  }
+}

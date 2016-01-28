@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nodeCAST</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/myfavicon.ico" type="image/x-icon">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/forcast.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<a href="/"><h1>node<span>CAST</span></h1></a>
+		</div><!-- end .wrapper -->
+	</header>
+	<div class="note wrapper">
+		<p>A forcast app the runs server side javascript with the power of <span>node.js</span></p>
+
+		<form class="address" action="/" method="POST">
+			<p class="alert">**Address input required**</p>
+			<input type="text" name="address" id="address" placeholder="Enter your address" spellcheck="false" autocomplete=
+			"off">
+			<button>CAST</button>
+		</form>
+	</div><!-- end .note .wrapper -->
+
+	<div id="results" class="wrapper">
+		<h3></h3>
+		<div class="right-now">
+			<table>
+				<tbody>
+					<tr>
+						<td>Currently:</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Feels Like:</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table><!--
+		 --><div class="summary">
+				<span></span>
+			</div><!--
+		 --><div class="humidity">
+		 		<span></span>
+			</div><!-- end .humidity -->
+		</div><!-- end .right-now -->
+
+		<div class="five-day">
+			<h4><span>&#8595;</span>5 Day Forcast<span>&#8595;</span></h4>
+
+			<!-- float all these div.day elements -->
+			<div class="day">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="day">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="day">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="day">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="day">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>									
+
+		</div><!-- end .five-day -->
+
+		<span class="stamp">Designed by Matthew Greenberg<br>magreenberg@fullsail.edu</span>
+
+	</div><!-- end #results -->
+
+</body>
+</html>
